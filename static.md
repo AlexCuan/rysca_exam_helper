@@ -1,6 +1,6 @@
 # Escenario Estatico
 
-Ver diagrama escenario estatico. En las rutas estaticas si se usa redundacia se le pone un peso las rutas duplicadas para que no ocurran bucles.
+Ver diagrama escenario estatico. En las rutas estaticas si se usa redundacia se le pone un peso/distancia a las rutas duplicadas para que no ocurran bucles. Mientras mas distancia menos peso tienen
 
 ### R1
 ```bash
