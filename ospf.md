@@ -1,6 +1,6 @@
 Si queremos hacer un area stub simplemente añadimos el comando `area 10.10.2.0 stub`
 Si queremos redistribuir rutas de un tipo usamos el comando `redistribute type_of_route`
-
+OJO: La redistribucion la hace solamente el router que habla los 2 protocolos (rip y ospf, u otro)
 
 ## R1
 ```bash
@@ -32,7 +32,8 @@ router ospf
 ospf router-id 10.10.2.176
 passive-interface eth0.1
 network 10.10.2.0/24 area 10.10.2.0
-
+exit
+exit
 
 
 ```
@@ -69,6 +70,8 @@ router ospf
 ospf router-id 10.10.2.177
 passive-interface eth0.1
 network 10.10.2.0/24 area 10.10.2.0
+exit
+exit
 
 ```
 
@@ -102,6 +105,8 @@ router ospf
 ospf router-id 10.10.2.178
 passive-interface eth0.1
 network 10.10.2.0/24 area 10.10.2.0
+exit
+exit
 
 ```
 
@@ -133,5 +138,7 @@ router ospf
 ospf router-id 10.10.2.179
 network 10.0.0.0/24 area 0.0.0.0
 network 10.10.2.0/24 area 10.10.2.0
+exit
+exit
 
 ```
