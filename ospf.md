@@ -131,7 +131,7 @@ exit
 
 router ospf
 ospf router-id 10.10.2.179
-network 10.10.0.0/24 area 0.0.0.0
+network 10.0.0.0/24 area 0.0.0.0
 network 10.10.2.0/24 area 10.10.2.0
 
 ```

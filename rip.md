@@ -25,9 +25,12 @@ ip address 10.10.2.176/32
 exit
 
 router rip
+passive-interface eth0.1
 network eth0.1
 network eth0.2
 network eth0.3
+exit
+exit
 ```
 
 ## R2
@@ -59,9 +62,13 @@ exit
 
 
 router rip
+passive-interface eth0.1
 network eth0.1
 network eth0.2
 network eth0.3
+exit
+exit
+
 ```
 
 ## R3
@@ -93,9 +100,13 @@ exit
 
 router rip
 passive-interface eth0.1
+network eth0.1
 network eth0.2
 network eth0.3
 network eth0.4
+exit
+exit
+
 ```
 
 ## R4
@@ -125,4 +136,7 @@ exit
 router rip
 network eth0.1
 network eth0.2
+exit
+exit
+
 ```
